@@ -1,0 +1,67 @@
+What is Docker?
+
+Docker is a platform that lets you package an application and all its 
+dependencies into a container so it runs the same everywhere.
+
+A Docker container includes:
+
+1. Application code
+2. Runtime (Java, Node, Python, etc.)
+3. Libraries
+4. System dependencies
+5. Configuration
+
+Everything required to run the application.
+
+Why do we need docker?
+
+1. Environmental Problems:
+    Before docker, a common issue was:
+    It works on my computer, but not on the server.
+
+    This happens because:
+      Different OS versions
+      Different library versions
+      Missing dependencies
+      Different configurations
+Docker solves this problem by packaging the entire environment with the application.
+
+2. Consistency across environment:
+
+  With docker, all environments are identical
+    Devlopment
+    Testing
+    Staging
+    Production
+  All environments are identical.
+
+3. Light weight Isolation:
+
+    Docker uses host kernal.
+    Lightweight
+    Starts in seconds
+    Use fewer resources than a VM.
+_____________________________________________________________________
+
+
+What Does Docker actually do?
+
+Build: Create an image with the docker file.
+Ship: Move the image to different machines,Cloud VMs.
+Run: Start a container from the image.
+
+______________________________________________________________________
+
+
+Process of crating a docker container.
+
+1. Write a docker file.
+
+  Docker file is a text file where we define:
+
+  Base Image: an operating system, sometimes a runtime.
+  Runtime: It a the software needed to run your application code.
+  Dependencies: Extra libraries or packages to app needs to work.
+  Copy of app code: We must move our application code into a container.
+  Command to run: This tells docker what command should run when container start.
+
